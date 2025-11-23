@@ -1,0 +1,13 @@
+server:
+  port: 8761
+
+spring:
+  application:
+    name: discovery-service
+
+eureka:
+  client:
+    register-with-eureka: false # I am the server, don't register me
+    fetch-registry: false       # I own the registry, don't fetch it
+  server:
+    wait-time-in-ms-when-sync-empty: 0 # Start immediately without waiting
